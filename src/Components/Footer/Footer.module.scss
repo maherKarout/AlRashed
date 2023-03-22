@@ -1,0 +1,31 @@
+@import "/src/styles/colors/colors.scss";
+.footer {
+  background-color: $primaryMain !important;
+  padding: 50px;
+  .title {
+    margin-bottom: 30px;
+    font-size: 22px;
+    width: 100%;
+  }
+  img {
+    margin-bottom: 10px;
+  }
+  .maintitle {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  p {
+    color: $primaryLight2;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+.bottom-footer {
+  background-color: $primaryDark;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}

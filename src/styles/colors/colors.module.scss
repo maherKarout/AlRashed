@@ -1,0 +1,37 @@
+@import "./colors.scss";
+
+:export {
+  //primary
+  primaryMain: $primaryMain;
+  primaryLight1: $primaryLight1;
+  primaryLight2: $primaryLight2;
+  primaryDark: $primaryDark;
+  //accent
+  accentMain: $accentMain;
+  accentLight1: $accentLight1;
+  accentLight2: $accentLight2;
+
+  //grey
+  greyMain: $greyMain;
+  greyLight1: $greyLight1;
+  greyLight2: $greyLight2;
+  greyLight3: $greyLight3;
+  greyLight4: $greyLight4;
+  greyLight5: $greyLight5;
+  greyLight6: $greyLight6;
+  greyLight7: $greyLight7;
+
+  //white
+  whiteMain: $whiteMain;
+  whiteDark: $whiteDark;
+
+  //text
+  textMain: $textMain;
+  textDark: $textDark;
+
+  successMain: $successMain;
+  successLight: $successLight;
+  error: $error;
+  errorLight: $errorLight;
+  warning: $warning;
+}

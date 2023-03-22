@@ -1,0 +1,50 @@
+//primary-color
+$primaryMain: #494187;
+$primaryLight1: #c2c4f2;
+$primaryLight2: #e5e7ff;
+$primaryDark: #373065;
+
+$secondaryMain: #61bdca;
+
+//grey-color
+$greyMain: #4e6883;
+$greyLight1: #8292a9;
+$greyLight2: #b4beca;
+$greyLight3: #D5dfeb;
+$greyLight4: #e9ecf5;    
+$greyLight5: #f8f7fa;
+$greyLight6: #f6f8fc;
+$greyLight7: rgba(233, 236, 245, 0.5);
+
+//accent-color
+$accentMain: #61bdca;
+$accentLight1: #cfebf8;
+$accentLight2: #ecf7fc;
+
+//white-color
+$whiteMain: #ffffff;
+$whiteDark: #edf2fa;
+
+//text-color
+$textMain: #243d66;
+$textDark: #000000;
+
+$successMain: #61ca6e;
+$successLight: #d8efe0;
+$error: #ec7f7a;
+$errorLight: #fbe5e4;
+$warning: #e2de95;
+
+// Mixin to center content using Flexbox
+@mixin center($jus: center, $align: center) {
+  display: flex;
+  justify-content: $jus;
+  align-items: $align;
+}
+
+
+// padding
+$primaryPadding: 20px;
+
+// radius
+$primaryRadius: 16px;

@@ -1,0 +1,23 @@
+@import "/src/styles/colors/colors.scss";
+
+.collage-box {
+  // min-width: 260px;
+  // min-height: 260px;
+  max-width: 900px;
+  min-height: 260px;
+  border-radius: 16px;
+  background-color: $greyLight4;
+  @include center;
+  color: $primaryDark;
+}
+
+.collage-box-blue {
+  // min-width: 260px;
+  // min-height: 260px;
+  max-width: 900px;
+  min-height: 260px;
+  border-radius: 16px;
+  background-color: $primaryDark;
+  @include center;
+  color: $whiteDark;
+}

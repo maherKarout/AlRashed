@@ -1,0 +1,31 @@
+@import "/public/assets/colors/colors.scss";
+
+.card {
+  max-width: 900px;
+  max-height: 400px;
+  height: 350px;
+  border-radius: $primaryRadius;
+  background-color: $greyLight4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 30px;
+
+  .card-img {
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: $greyLight3;
+  }
+
+  .text-content {
+    color: $greyLight1  ;
+    .title {
+      color: $primaryDark;
+      margin-bottom: 10px;
+    }
+  }
+}

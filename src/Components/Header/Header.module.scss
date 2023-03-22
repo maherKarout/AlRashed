@@ -1,0 +1,47 @@
+@import "/public/assets/colors/colors.scss";
+@import "/public/Variables/variables.scss";
+.header {
+  background-color: $primaryMain;
+  position: relative;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  padding: 0px $primaryPadding;
+
+  .logo {
+    border-radius: 50%;
+    display: none;
+  }
+  > ul:first-child li:first-child svg {
+    color: $whiteMain;
+  }
+
+  ul {
+    @include center;
+
+    li {
+      padding: 10px;
+      @include center;
+      gap: 5px;
+
+      svg {
+        color: $secondaryMain;
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .header {
+    justify-content: center;
+    margin-bottom: 20px;
+    .logo {
+      display: block;
+    }
+    ul {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,68 @@
+@import "/public/assets/colors/colors.scss";
+
+.navbar {
+  transition: 1s position ease;
+  > ul {
+    padding: 0 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: $textMain;
+    li {
+      padding: 10px;
+      img {
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+.navbar.show-scroll {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  background-color: $primaryMain;
+  animation: scrolling 1s forwards;
+  ul li {
+    color: $whiteMain;
+  }
+}
+
+@keyframes scrolling {
+  0% {
+    top: -100px;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    text-align: right;
+    position: absolute;
+    top: 80px;
+    transition: 0.5s;
+    // right: 0;
+    background-color: $whiteDark;
+    ul {
+      flex-direction: column;
+
+      li {
+        padding: $primaryPadding;
+        width: 100%;
+        background-color: $primaryLight2;
+        border-radius: 15px;
+        margin-top: 10px;
+        font-size: 16px;
+      }
+
+      .liimg {
+        display: none;
+      }
+    }
+  }
+}

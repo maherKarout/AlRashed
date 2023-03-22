@@ -1,0 +1,12 @@
+@import "/public/assets/colors/colors.module.scss";
+
+.landing {
+  background-image: url(/public/assets/vasily-koloda-8CqDvPuo_kI-unsplash.jpg);
+  height: 600px;
+  width: 95%;
+  border-radius: 30px;
+  margin: auto;
+  background-color: #bcbcbe;
+  @include center;
+  text-align: center;
+}

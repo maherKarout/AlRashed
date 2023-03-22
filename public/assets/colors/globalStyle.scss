@@ -1,0 +1,254 @@
+@import "./colors/colors.scss";
+
+$fontFamilyBold: "URW DIN Arabic bold";
+$fontFamilyMedium: "URW DIN Arabic Medium";
+$fontFamily: "URW DIN Arabic";
+
+$fontSize10: "10px";
+$fontSize12: "12px";
+$fontSize14: "14px";
+$fontSize16: "16px";
+$fontSize18: "18px";
+$fontSize20: "20px";
+$fontSize24: "24px";
+$fontSize30: "30px";
+$fontSize38: "38px";
+
+
+
+@font-face {
+    font-family: 'URW DIN Arabic';
+    src: url(./URW-DIN-Arabic-Black.ttf) format('opentype');
+    font-weight: 900;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'URW DIN Arabic';
+    src: url(./URW-DIN-Arabic-Bold.ttf) format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'URW DIN Arabic';
+    src: url(./URW-DIN-Arabic-Medium.ttf) format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'URW DIN Arabic';
+    src: url(./URW-DIN-Arabic.ttf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+///to remove
+.comingSoonOption,.comingSoon {
+    position: relative;
+    z-index: 100;
+    overflow: hidden;
+    cursor: initial;
+    background-color: #E9ECF5 !important;
+
+    box-shadow: 0px 2px 10px 0px rgba(229, 231, 255, 0.15) !important;
+
+    & svg {
+        color: #8292A9;
+    }
+}
+.comingSoon{
+    z-index: 0  ;
+}
+.comingSoonOption p {
+    color: rgba(36, 61, 102, 0.5) !important;
+}
+
+
+
+
+.comingSoonOption::after,
+.comingSoon::after {
+    // content: "COMING SOON";
+    content: attr(text-data);
+    top: 0;
+    left: 0;
+    width: 30%;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    background-image: url("./curve.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: 4;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.6em;
+    padding: 8px;
+    font-weight: bold;
+    border-radius: 0 0 20px 20px;
+
+
+    @media (min-width: 900px) {
+        width: 16%;
+        left: 40px;
+    }
+}
+
+
+
+.comingSoon::after {
+    width: 70% !important;
+    left: 10px;
+    box-shadow: none !important;
+    background-size: 100%;
+    padding: 3px;
+
+    @media (min-width: 900px) {
+        width: 50% !important;
+        padding: 7px;
+    }
+}
+
+///to remove
+
+
+///default styles
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "URW DIN Arabic" !important;
+    // outline: 1px solid black;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s;
+
+}
+
+a:active {
+    color: inherit;
+    background-color: $primaryDark;
+    border-radius: 10px;
+    color: $whiteMain;
+
+}
+
+///default styles
+
+/// scrollbar
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $primaryMain;
+    border-radius: 10px;
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: $primaryDark;
+}
+
+/// scrollbar
+
+////nav icon style 
+.nav-icon-5 {
+    width: 35px;
+    height: 25px;
+    margin: 10px 10px 5px 0;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+}
+
+.nav-icon-5 span {
+    background-color: #fff;
+    position: absolute;
+    border-radius: 2px;
+    transition: .3s cubic-bezier(.8, .5, .2, 1.4);
+    width: 100%;
+    height: 3.5px;
+    transition-duration: 500ms
+}
+
+.nav-icon-5 span:nth-child(1) {
+    top: 3px;
+    left: 0px;
+}
+
+.nav-icon-5 span:nth-child(2) {
+    top: 13px;
+    left: 0px;
+    opacity: 1;
+}
+
+.nav-icon-5 span:nth-child(3) {
+    bottom: 0px;
+    left: 0px;
+}
+
+.nav-icon-5:not(.open):hover span:nth-child(1) {
+    transform: rotate(-3deg) scaleY(1.1);
+}
+
+.nav-icon-5:not(.open):hover span:nth-child(2) {
+    transform: rotate(3deg) scaleY(1.1);
+}
+
+.nav-icon-5:not(.open):hover span:nth-child(3) {
+    transform: rotate(-4deg) scaleY(1.1);
+}
+
+.nav-icon-5.open span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 13px;
+}
+
+.nav-icon-5.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.nav-icon-5.open span:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 13px;
+}
+
+////nav icon style 
+
+///swiper override
+// .swiper-button-prev {
+//     scale: 0.4;
+//     left: -10px !important;
+//     color: $primaryMain !important;
+//     font-weight: bold;
+// }
+
+// .swiper-button-next {
+//     scale: 0.4;
+//     left: 10px !important;
+//     color: $primaryMain !important;
+// }
+
+.swiper-button-disabled {
+    opacity: 0.5 !important
+}
+
+///swiper override

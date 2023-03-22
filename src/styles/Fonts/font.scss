@@ -1,0 +1,33 @@
+// @font-face {
+//   font-family: "URW DIN Arabic";
+//   src: url("./._URW DIN Arabic Black.ttf") format("opentype");
+//   font-weight: 900;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: "URW DIN Arabic";
+//   src: url("./._URW DIN Arabic Bold.ttf") format("opentype");
+//   font-weight: bold;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: "URW DIN Arabic";
+//   src: url("./._URW DIN Arabic Medium.ttf") format("opentype");
+//   font-weight: 500;
+//   font-style: normal;
+// }
+
+@font-face {
+  font-family: "URW DIN Arabic";
+  src: url("/src\styles\Fonts\._URW-DIN-Arabic-Medium.ttf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+// * {
+//   font-family: "URW DIN Arabic", "Courier New", Courier, monospace;
+//   font-style: bold;
+//   // background-color: rgb(80, 76, 76);
+// }
