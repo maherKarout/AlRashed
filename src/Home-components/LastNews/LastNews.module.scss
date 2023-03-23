@@ -1,0 +1,29 @@
+@import "/src//styles/colors/colors.scss";
+
+.last-news {
+.title-last-news{
+    color: $primaryDark;
+    font-size: 44px;
+    text-align: start;
+    margin-right: 90px;
+    position: relative;
+
+    span{
+        position: absolute;      
+        width: 20%;
+        right: 225px;
+        top: 50%;
+        height: 5px;
+        background-color: $greyLight1;
+    }
+}
+
+  .gdlr-core-personnel-item.gdlr-core-item-pdb.clearfix.gdlr-core-left-align.gdlr-core-personnel-item-style-grid-with-background.gdlr-core-personnel-style-grid.gdlr-core-with-background {
+    .gdlr-core-personnel-style-grid.gdlr-core-personnel-list-column {
+      margin-left: 40px !important;
+    }
+}
+.card {
+  margin-left: 40px !important;
+}
+}

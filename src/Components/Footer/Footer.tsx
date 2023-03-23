@@ -13,17 +13,41 @@ function Footer() {
           justifyContent={"space-around"}
           alignItems={{ xs: "center", md: "flex-start" }}
           spacing={5}
-          sx={{ textAlign: { xs: "center", md: "end" } }}
+          sx={{ textAlign: { xs: "center", md: "start" } }}
         >
-          <Stack alignItems={"end"}>
+     
+
+          <Stack alignItems={"center"}>
+            <Image
+              src={"/assets/AlRashed 2.svg"}
+              alt=""
+              width={100}
+              height={100}
+            />
+            <h2 className={styles.maintitle}>
+              جامعة الرشسيد الدولية الخاصة للعلوم
+            </h2>
+            <p>هنا يوجد نص هنا يوجد نصهنا يوجد نص هنا يوجد </p>
+            <p>هنا يوجد نص هنا يوجد نصهنا يوجد نص هنا يوجد </p>
+          </Stack>
+
+          <Stack alignItems={"start"}>
+            <h2 className={styles.title}>روابط سريعة</h2>
+            <p>القبول في الجامعة</p>
+            <p>هنا يوجد نص</p>
+            <p>هنا يوجد نص</p>
+            <p>هنا يوجد نص</p>
+          </Stack>
+
+          <Stack alignItems={"start "}>
             <h2 className={styles.title}>تواصل معنا</h2>
             <p>
-              01133117100-0158691200
               <img src="/assets/Call Silent.svg" alt="" />
+              01133117100-0158691200
             </p>
             <p>
-              ru@ru.edu.sy ru@ru.edu.sy{" "}
               <img src="/assets/Squircle.svg" alt="" />
+              ru@ru.edu.sy ru@ru.edu.sy{" "}
             </p>
             <p className={styles["social-media"]}>
               <Image
@@ -53,36 +77,16 @@ function Footer() {
             </p>
           </Stack>
 
-          <Stack alignItems={"end"}>
-            <h2 className={styles.title}>روابط سريعة</h2>
-            <p>القبول في الجامعة</p>
-            <p>هنا يوجد نص</p>
-            <p>هنا يوجد نص</p>
-            <p>هنا يوجد نص</p>
-          </Stack>
 
-          <Stack alignItems={"center"}>
-            <Image
-              src={"/assets/AlRashed 2.svg"}
-              alt=""
-              width={100}
-              height={100}
-            />
-            <h2 className={styles.maintitle}>
-              جامعة الرشسيد الدولية الخاصة للعلوم
-            </h2>
-            <p>هنا يوجد نص هنا يوجد نصهنا يوجد نص هنا يوجد </p>
-            <p>هنا يوجد نص هنا يوجد نصهنا يوجد نص هنا يوجد </p>
-          </Stack>
         </Stack>
       </footer>
 
-      <footer className={styles["bottom-footer"]}>
+      <Stack direction={{xs:"column" ,md:"row"}} sx={{textAlign:{xs:"center" ,md:"start"}}} className={styles["bottom-footer"]}>
+        <p>All Rights Reserved | Terms and Conditions | Privacy Policy</p>
         <p>
           Copyright © 2023 جامعة الرشيد الخاصة - AL-Rasheed Private University
         </p>
-        <p>All Rights Reserved | Terms and Conditions | Privacy Policy</p>
-      </footer>
+      </Stack>
     </div>
   );
 }

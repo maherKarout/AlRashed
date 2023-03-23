@@ -19,6 +19,7 @@
 
 .navbar.show-scroll {
   position: fixed;
+  z-index: 5;
   left: 0;
   width: 100%;
   background-color: $primaryMain;

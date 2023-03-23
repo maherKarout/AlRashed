@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  direction: rtl;
 }
 
 ul {
@@ -20,3 +21,19 @@ a {
 body {
   color: white;
 }
+
+
+
+
+// @font-face {
+//   font-family: "URW DIN Arabic";
+//   src: url("/src/styles/Font/URW-DIN-Arabic-Black.ttf") format("truetype");
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+// body {
+//     font-family: "URW DIN Arabic", "Courier New", Courier, monospace;
+//     font-style: bold;
+//   }
+  

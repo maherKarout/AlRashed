@@ -2,10 +2,10 @@ import Image from "next/image";
 import React, { useState, useEffect, useRef } from "react";
 import styles from "./Navbar.module.scss";
 
-function Navbar({showMenu}:{showMenu: boolean}) {
+function Navbar({ showMenu }: { showMenu: boolean }) {
   useEffect(() => {
     scrollNavbar(navbarRef.current);
-    openNavbar(navbarRef.current ,showMenu);
+    openNavbar(navbarRef.current, showMenu);
   });
 
   const navbarRef = useRef<HTMLDivElement | null>(null);
@@ -13,16 +13,16 @@ function Navbar({showMenu}:{showMenu: boolean}) {
   return (
     <div className={styles.navbar} ref={navbarRef}>
       <ul>
-        <li>الاخبار والفعاليات</li>
-        <li>الأبحاث العلمية</li>
-        <li>الخدمات الرقمية</li>
-        <li className={styles.liimg}>
-          <Image src="/download.jpg" width={70} height={70} alt="" />
-        </li>
         <li>الشؤون الاكاديمية</li>
         <li>القبول </li>
         <li>الكليات</li>
         <li>عن الجامعة</li>
+        <li className={styles.liimg}>
+          <Image src="/download.jpg" width={70} height={70} alt="" />
+        </li>
+        <li>الخدمات الرقمية</li>
+        <li>الاخبار والفعاليات</li>
+        <li>الأبحاث العلمية</li>
       </ul>
     </div>
   );
@@ -38,7 +38,7 @@ function scrollNavbar(ref: HTMLDivElement | any) {
   });
 }
 
-function openNavbar(ref: HTMLDivElement|any ,showMenu: boolean) {
+function openNavbar(ref: HTMLDivElement | any, showMenu: boolean) {
   if (window.innerWidth <= 900 && showMenu) {
     ref.style.right = "100%";
   } else {

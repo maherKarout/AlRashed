@@ -9,7 +9,7 @@
 
 
 import "@/styles/globals.scss";
-import "@/styles/Fonts/font.scss";
+import "@/styles/Font/font.scss";
 import type { AppProps } from "next/app";
 import Layout from "./Layout";
 import Head from "next/head";
@@ -19,15 +19,15 @@ export default function App({ Component, pageProps }: AppProps) {
     <>
     <Head>
 
-    {/* <link rel="stylesheet" href="css/common-skeleton.min.css?" type="text/css" media="all" /> */}
-    {/* <link rel="stylesheet" href="css/tooltip.min.css" type="text/css" media="all" /> */}
-    {/* <link rel="stylesheet" href="css/font-awesome.css" type="text/css" media="all" /> */}
-    {/* <link rel="stylesheet" href="css/elegant-font.css" type="text/css" media="all" /> */}
-    {/* <link rel="stylesheet" href="css/style.css" type="text/css" media="all" /> */}
-    {/* <link rel="stylesheet" href="css/page-builder.css" type="text/css" media="all" /> */}
-    {/* <link rel="stylesheet" href="plugins/revslider/public/assets/css/rs6.css" type="text/css" media="all" /> */}
-    {/* <link rel="stylesheet" href="css/style-core.css" type="text/css" media="all" /> */}
-    {/* <link rel="stylesheet" href="css/kingster-style-custom.css" type="text/css" media="all" /> */}
+    <link rel="stylesheet" href="css/common-skeleton.min.css?" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/tooltip.min.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/font-awesome.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/elegant-font.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/page-builder.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="plugins/revslider/public/assets/css/rs6.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/style-core.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/kingster-style-custom.css" type="text/css" media="all" />
     </Head>
       <Layout>
         <Component {...pageProps} />

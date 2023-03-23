@@ -33,19 +33,19 @@ export default function Header({
       </Box>
       <ul>
         <li>
-          <img src="/assets/language-icon 1.svg" alt="" /> عربي
-        </li>
-        <li>حساب الطالب</li>
-        <li></li>
-      </ul>
-      <ul>
-        <li>
           <img src="/assets/Squircle.svg" alt="" /> ru@ru.edu.sy
         </li>
         <li>
           <img src="/assets/Call Silent.svg" alt="" />
           0158691200
         </li>
+      </ul>
+      <ul>
+        <li>حساب الطالب</li>
+        <li>
+          <img src="/assets/language-icon 1.svg" alt="" /> عربي
+        </li>
+        <li></li>
       </ul>
     </div>
   );

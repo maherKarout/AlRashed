@@ -8,6 +8,7 @@
     color: $primaryDark;
     font-size: 44px;
     margin-bottom: 20px;
+    font-weight: 700;
   }
   p {
     color: $greyMain;
@@ -22,9 +23,9 @@
     transform: translatey(-50%);
   }
   .left-side {
-    left: 15%;
+    left: 10%;
   }
   .right-side {
-    right: 15%;
+    right: 10%;
   }
 }

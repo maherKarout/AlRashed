@@ -8,6 +8,8 @@ import CollageBox from "@/Components/BoxCollage/CollageBox";
 import { Grid } from "@mui/material";
 import Container from "@/Components/Container/Container";
 import LearnSection from "@/Home-components/LearnSection/LearnSection";
+import Stat from "@/Home-components/Statistics/Stat";
+import LastNews from "@/Home-components/LastNews/LastNews";
 
 export default function Home() {
   const collageName = [
@@ -41,6 +43,10 @@ export default function Home() {
         </Grid>
 
         <LearnSection />
+      </Container>
+      <Stat />
+      <Container>
+        <LastNews />
       </Container>
     </>
   );

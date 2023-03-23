@@ -1,0 +1,16 @@
+@import "/src/styles/colors/colors.scss";
+.stat {
+  background-color: $greyLight3 !important;
+  padding: 40px;
+  .gdlr-core-counter-item.gdlr-core-item-pdlr.gdlr-core-item-pdb.gdlr-core-center-align{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: red;
+  }
+  img {
+    height: 100px !important;
+    width: 100px !important;
+  }
+}
